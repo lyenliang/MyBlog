@@ -1,0 +1,16 @@
+<div id="recentcomments" class="dsq-widget">
+    <p class="asidetitle">Recent Comments</p>
+        <script type="text/javascript" src="http://lyenliang.disqus.com/recent_comments_widget.js?num_items=10&hide_avatars=1&avatar_size=32&excerpt_length=100&hide_mods=0"></script>
+</div>
+<% if (site.posts.length){ %>
+<div class="categorieslist">
+    <p class="asidetitle">Recents</p>
+        <ul>
+          <% site.posts.sort('date', -1).limit(5).each(function(post){ %>
+            <li>
+              <a href="<%- config.root %><%- post.path %>"><%= post.title || '(no title)' %></a>
+            </li>
+          <% }) %>
+        </ul>
+</div>
+<% } %>

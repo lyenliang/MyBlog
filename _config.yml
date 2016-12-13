@@ -71,3 +71,16 @@ deploy:
   type: git
   repo: https://github.com/lyenliang/lyenliang.github.io.git
   branch: master
+
+# Disqus
+disqus_shortname: lyenliang
+
+#### Widgets
+widgets: 
+- recent_posts
+- category
+- archive
+- tagcloud 
+- recent_comment
+- links
+- rss
