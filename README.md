@@ -8,3 +8,10 @@
 
 ### Deploy to remote sites
     hexo deploy
+	
+### hexo-cli installation
+    npm install -g hexo-cli
+
+### Starting the server
+    hexo server --open
+    INFO  Hexo is running at http://localhost:4000/. Press Ctrl+C to stop.
