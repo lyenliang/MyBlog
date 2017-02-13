@@ -84,3 +84,14 @@ widgets:
 - recent_comment
 - links
 - rss
+
+robotstxt:
+  useragent: "*"
+  disallow: 
+    - /css/
+    - /fancybox/
+  allow:
+    - /
+    - /archives/
+    
+  
