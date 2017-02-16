@@ -94,4 +94,5 @@ robotstxt:
     - /
     - /archives/
     
-  
+sitemap:
+   path: sitemap.xml
