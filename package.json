@@ -15,6 +15,7 @@
     "hexo-generator-robotstxt": "^0.2.0",
     "hexo-generator-seo-friendly-sitemap": "0.0.20",
     "hexo-generator-tag": "^0.2.0",
+    "hexo-imagemin": "^0.1.0",
     "hexo-renderer-ejs": "^0.2.0",
     "hexo-renderer-marked": "^0.2.10",
     "hexo-renderer-stylus": "^0.3.1",
