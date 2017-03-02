@@ -6,6 +6,9 @@
 ### Create a new post
     hexo new "My New Post"
 
+### Generate the static website before deployment
+    hexo deploy -g
+	
 ### Deploy to remote sites
     hexo deploy
 	
