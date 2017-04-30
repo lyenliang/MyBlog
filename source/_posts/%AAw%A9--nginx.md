@@ -1,7 +1,9 @@
 title: Installing nginx from source on Ubuntu 14.04
 author: lyenliang
-date: 2017-04-28 17:26:56
 tags:
+  - nginx
+categories: []
+date: 2017-04-28 17:26:00
 ---
 These installation steps are just for my reference. Visit [INSTALLING NGINX OPEN SOURCE](https://www.nginx.com/resources/admin-guide/installing-nginx-open-source/) if you need a more detailed installation guide.
 

@@ -1,7 +1,9 @@
 title: '[javascript] 運算子執行順序(operator associativiy)與強制轉型(coercion)'
 author: John Doe
-date: 2017-02-13 21:52:46
 tags:
+  - javascript
+categories: []
+date: 2017-02-13 21:52:00
 ---
 無意間發現`console.log( 3 > 2 > 1 );`回傳值是 `false`，讓我感到有些奇怪，因為 3 比 2 大也比 1 大，而且 2 比 1 大也是正確的，照理講應該回傳`true`才合理。但仔細想想後才意識到`3 > 2 > 1`應該要拆開來看能知道當中發生什麼事情：
 

@@ -1,7 +1,9 @@
 title: '[node.js] event-driven, and non-blocking'
 author: lyenliang
-date: 2017-03-04 09:38:58
 tags:
+  - node.js
+categories: []
+date: 2017-03-04 09:38:00
 ---
 [node.js](https://nodejs.org/en/) 官方網站說 *Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient*
 

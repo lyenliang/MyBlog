@@ -1,7 +1,9 @@
 title: '[jenkins] Sharing files between jenkins master and slave nodes'
 author: lyenliang
-date: 2017-03-16 20:37:10
 tags:
+  - jenkins
+categories: []
+date: 2017-03-16 20:37:00
 ---
 Sometimes you may want to share files between your jenkins master and slave nodes. 
 

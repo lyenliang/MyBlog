@@ -1,7 +1,9 @@
 title: '[java] Memory 管理'
 author: lyenliang
-date: 2017-03-25 21:16:09
 tags:
+  - java
+categories: []
+date: 2017-03-25 21:16:00
 ---
 Java 的 Memory 主要分成 stack 及 heap 兩部份，每個 thread 都有各自對應的 stack，stack 是個 first in last out 的資料結構。每當一個 code block 結束時，他 stack 內的 variable 就會因被 pop 出來而消失；heap 的空間則由所有 thread 共享。
 

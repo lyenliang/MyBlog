@@ -1,7 +1,9 @@
 title: '[javascript] Setting default values for parameters of a function'
 author: John Doe
-date: 2017-02-06 22:51:00
 tags:
+  - javascript
+categories: []
+date: 2017-02-06 22:51:00
 ---
 In javascript, you can call a function with any number of parameters you like. 
 
