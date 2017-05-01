@@ -38,3 +38,10 @@ Configure the modules you want to install with [Installation and Compile-Time Op
     ./configure --sbin-path=/usr/bin/nginx --conf-path=/etc/nginx/nginx.conf --error-log-path=/var/log/nginx/error.log --http-log-path=/var/log/nginx/access.log --with-debug --with-pcre --with-http_ssl_module 
     make
     sudo make install
+    
+For installing nginx as a service, I use initScript from https://raw.githubusercontent.com/JasonGiedymin/nginx-init-ubuntu/master/nginx
+
+    wget https://raw.githubusercontent.com/JasonGiedymin/nginx-init-ubuntu/master/nginx
+    mv nginx /etc/init.d/nginx
+    chmod +x nginx
+    update-rc.d -f nginx defaults
