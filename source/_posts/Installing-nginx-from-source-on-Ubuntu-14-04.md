@@ -3,7 +3,7 @@ author: lyenliang
 tags:
   - nginx
 categories: []
-date: 2017-04-28 17:26:00
+date: 2017-05-01 15:57:00
 ---
 These installation steps are just for my reference. Visit [INSTALLING NGINX OPEN SOURCE](https://www.nginx.com/resources/admin-guide/installing-nginx-open-source/) if you need a more detailed installation guide.
 
