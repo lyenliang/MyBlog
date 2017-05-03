@@ -45,3 +45,13 @@ For installing nginx as a service, I use initScript from https://raw.githubuserc
     mv nginx /etc/init.d/nginx
     chmod +x nginx
     update-rc.d -f nginx defaults
+	
+If I exeucte `service nginx status` now, I would get `/etc/init.d/nginx: You don't have permissions to execute nginx.`. 
+
+This is because I made some custom configurations when installing nginx. 
+
+According to the [Advanced Configuration](https://github.com/JasonGiedymin/nginx-init-ubuntu), I should edit `DAEMON` and `NGINX_CONF_FILE` in `/etc/default/nginx`
+
+    echo "NGINX_CONF_FILE=/etc/nginx/nginx.conf" > /etc/default/nginx
+	echo "DAEMON=/usr/bin/nginx" >> /etc/default/nginx
+
