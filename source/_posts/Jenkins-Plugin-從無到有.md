@@ -5,7 +5,7 @@ tags:
 categories: []
 date: 2017-04-30 14:01:00
 ---
-之前用 [jenkins](https://jenkins.io/) 經常會希望 console output 可以直接顯示在 project 頁面上，因為這樣可以比較快看到 build 結果。
+前陣子自己寫了個 [Jenkins](https://jenkins.io/) 套件 [Display Console Output Plugin](https://wiki.jenkins-ci.org/display/JENKINS/Display+Console+Output+Plugin)，會開發這東西主要是因為之前用 Jenkins 時經常會希望 console output 可以直接顯示在 project 頁面上，因為這樣可以比較快看到 build 結果。
 
 像這樣：
 <img src="/images/jenkins/display_console_output.png" alt="stack heap" style="width: 730px; "/>
