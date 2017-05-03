@@ -32,6 +32,7 @@ date: 2017-04-30 14:01:00
     
 這段意思看起來是如果 `UNSTABLE` 這個 build 結果比最近一次 build 結果要好的話，就回傳 build ，否則回傳 `null`，於是我把這行改成 `return build;` 試試看，結果真的順利顯示最後一次 build 結果到 project 頁面上。
 
-到這邊我發現我已做出當初想要的功能，不過我也知道 code 還有很多地方還沒深入了解，感覺這是個會有很多 bug 的產品，而且 console tail plugin 有些程式碼是我不需要的，可以刪除，總之還有地方需要修改就是了。
+到這邊我發現我已做出當初想要的功能，不過我也知道 code 還有很多地方還沒深入了解，感覺這是個會有很多 bug 的產品，而且 console tail plugin 有些程式碼是我不需要的，這個 plugin 也無法即時顯示正在進行的 build，看來還需要改。
 
-待續…
+在 Jenkins 的 [source code](https://github.com/jenkinsci/jenkins/blob/master/core/src/main/resources/hudson/model/Run/console.jelly#L52-#L68) 裡有找到即時顯示 console output 的方式，看來這段 code 也可以參考。
+
