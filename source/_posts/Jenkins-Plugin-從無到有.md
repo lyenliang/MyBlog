@@ -5,7 +5,7 @@ tags:
 categories: []
 date: 2017-04-30 14:01:00
 ---
-前陣子自己寫了個 [Jenkins](https://jenkins.io/) 套件 [Display Console Output Plugin](https://wiki.jenkins-ci.org/display/JENKINS/Display+Console+Output+Plugin)，會開發這東西主要是因為之前用 Jenkins 時經常會希望 console output 可以直接顯示在 project 頁面上，因為這樣可以比較快看到 build 結果。
+前陣子自己寫了個 [Jenkins](https://jenkins.io/) 套件 [Display Console Output Plugin](https://wiki.jenkins-ci.org/display/JENKINS/Display+Console+Output+Plugin)，會開發這東西主要是因為希望 console output 可以直接顯示在 project 頁面上，這樣可以比較快看到 build 結果。
 
 像這樣：
 <img src="/images/jenkins/display_console_output.png" alt="stack heap" style="width: 730px; "/>
@@ -35,4 +35,3 @@ date: 2017-04-30 14:01:00
 到這邊我發現我已做出當初想要的功能，不過我也知道 code 還有很多地方還沒深入了解，感覺這是個會有很多 bug 的產品，而且 console tail plugin 有些程式碼是我不需要的，這個 plugin 也無法即時顯示正在進行的 build，看來還需要改。
 
 在 Jenkins 的 [source code](https://github.com/jenkinsci/jenkins/blob/master/core/src/main/resources/hudson/model/Run/console.jelly#L52-#L68) 裡有找到即時顯示 console output 的方式，看來這段 code 也可以參考。
-
