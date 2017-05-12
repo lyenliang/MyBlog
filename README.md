@@ -3,6 +3,7 @@
      npm install
      hexo generate
 
+
 ### Create a new post
     hexo new "My New Post"
 
