@@ -21,4 +21,4 @@
     INFO  Hexo is running at http://localhost:4000/. Press Ctrl+C to stop.
 
 ### Edit blog with [hexo-admin](https://github.com/jaredly/hexo-admin)
-    open http://localhost:4000/admin/
+    Open http://localhost:4000/admin/ with a browser.
