@@ -1,9 +1,11 @@
 title: External and Internal Software Quality Characteristics
 author: lyenliang
-date: 2017-12-03 10:23:34
 tags:
+  - software_quality
+categories: []
+date: 2017-12-03 10:23:00
 ---
-The following contents are extracted from [Code Complete: A Practical Handbook of Software Construction, Second Edition](https://www.amazon.com/Code-Complete-Practical-Handbook-Construction/dp/0735619670). This is one of the chapters that impressed me. So I think I should write it down on my blog.
+The following contents are extracted and modified from [Code Complete: A Practical Handbook of Software Construction, Second Edition](https://www.amazon.com/Code-Complete-Practical-Handbook-Construction/dp/0735619670). This is one of the chapters that impressed me. So I think I should write it down on my blog.
 
 Software quality has both external and internal characteristics. External characteristics are characteristics that a user of the product is aware of, including the following:
 
