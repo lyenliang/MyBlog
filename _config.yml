@@ -71,6 +71,8 @@ deploy:
   type: git
   repo: https://github.com/lyenliang/lyenliang.github.io.git
   branch: master
+  email: lyenliang@gmail.com
+  name: lyenliang
 
 # Disqus
 disqus_shortname: lyenliang
