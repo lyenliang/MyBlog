@@ -1,7 +1,9 @@
 title: AWS CLI 切換不同配置
 author: lyenliang
-date: 2018-06-16 14:54:45
 tags:
+  - aws
+categories: []
+date: 2018-06-16 14:54:00
 ---
 
 AWS CLI(command line interface) 的使用過程中，可能需要在不同的配置之間做切換，例如從 production 轉換到 development 環境。在 `~/.aws/config` 與 `~/.aws/credentials` [設定好](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html)後，基本的切換方式包含
