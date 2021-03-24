@@ -22,3 +22,14 @@ virtualenv 可透過 `pip` 安裝，輸入 `pip install virtualenv` 就能安裝
 首先切換到打算建立 python 環境的目錄，並輸入 `virtualenv <env_name>`，例如我想建名叫 `myenv` 的 python 環境，我可以輸入 `virtualenv myenv`，輸入完就會產生 `myenv/` 資料夾，這時可以用 `source myenv/bin/activate` 來啟動環境。
 
 啟動後你可以用 [`pip freeze`](https://pip.pypa.io/en/stable/reference/pip_freeze/) 來確認是不是真的沒有任何已裝好的 python 模組，因為全新的環境不應該有任何已安裝的模組。
+
+這時你就可以將要安裝的套件寫到 `requirements.txt` 檔案裡，然後用 `pip install -r requirements.txt` 安裝。
+
+`requirements.txt` 內容長的像這樣：
+
+```
+boto3==1.9.253
+pandas==1.0.3
+requests==2.22.0
+PyYAML==3.13
+```
