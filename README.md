@@ -29,3 +29,7 @@
 ## Edit blog with [hexo-admin](https://github.com/jaredly/hexo-admin)
 
     Open http://localhost:4000/admin/ with a browser.
+
+## [Install "next" theme](https://github.com/theme-next/hexo-theme-next)
+
+    git clone https://github.com/theme-next/hexo-theme-next themes/next
