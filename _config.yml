@@ -69,7 +69,8 @@ theme: next
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://github.com/lyenliang/lyenliang.github.io.git
+  # repo: https://github.com/lyenliang/lyenliang.github.io.git
+  repo: git@github.com:lyenliang/lyenliang.github.io.git
   branch: master
   email: lyenliang@gmail.com
   name: lyenliang
