@@ -1,5 +1,9 @@
 # lyenliang.github.io
 
+## Prerequisite
+ 
+ Because of [this issue](https://github.com/zalando-incubator/hexo-theme-doc/issues/149), you should use Node.js v12.x to setup this blog.
+
 ## Installation
 
      npm install
