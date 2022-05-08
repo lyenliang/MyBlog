@@ -16,14 +16,13 @@ def test_read_db():
         user="yourusername",
         password="yourpassword"
     )
-    mycursor = mydb.cursor() 
-    mycursor.execute("SELECT * FROM customers")
-    myresult = mycursor.fetchall()
-    for x in myresult:
-        print(x)
+    mycursor = mydb.cursor()
+    mycursor.execute("SELECT * FROM customers WHERE name = 'Andy'")
+    rows = mycursor.fetchall()
+    assert len(rows) == 1
 
 def test_update_db():
-	# mydb 在兩個 test 裡都有出現
+    # mydb 在兩個 test 裡都有出現
     mydb = mysql.connector.connect(
         host="localhost",
         user="yourusername",
@@ -33,7 +32,7 @@ def test_update_db():
     sql = "UPDATE customers SET address = 'Canyon 123' WHERE address = 'Valley 345'"
     mycursor.execute(sql)
     mydb.commit()
-    print(mycursor.rowcount, "record(s) affected")
+    assert mycursor.rowcount == 1
 ```
 
 這些重複的程式碼如果只需要寫一次的話，想必可以讓你的 code 讀起來較輕鬆，日後維護也比較方便。
@@ -54,17 +53,16 @@ def mydb():
 
 def test_read_db(mydb):
     mycursor = mydb.cursor()
-    mycursor.execute("SELECT * FROM customers")
-    myresult = mycursor.fetchall()
-    for x in myresult:
-        print(x)
+    mycursor.execute("SELECT * FROM customers WHERE name = 'Andy'")
+    rows = mycursor.fetchall()
+    assert len(rows) == 1
 
 def test_update_db(mydb):
     mycursor = mydb.cursor()
     sql = "UPDATE customers SET address = 'Canyon 123' WHERE address = 'Valley 345'"
     mycursor.execute(sql)
     mydb.commit()
-    print(mycursor.rowcount, "record(s) affected")
+    assert mycursor.rowcount == 1
 ```
 
 在上面的 code 裡，你可以發現我把原本的 `mydb` 轉成以下程式碼
