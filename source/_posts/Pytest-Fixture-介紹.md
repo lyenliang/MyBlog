@@ -78,3 +78,15 @@ def mydb():
 ```
 
 然後將 `mydb` 當作參數傳給 test function，這樣 test function 還是可以使用 `mydb`，且 `mydb` 只要建立一次就可以。
+
+不過由於 MySQL 建立連線需要一段時間，如果每跑一個測試就重建一次連線的話，非常耗時。為了節省時間，我們可以設定 fixture 在所有測試開始前，只執行一次：
+
+```
+@pytest.fixture(scope="module")
+def mydb():
+   ...
+```
+
+fixture 有 scope 參數可設定，當設為 `"module"` 時，fixture 會在 module 內最後一個 test 執行完才被拆掉。
+
+詳細的 fixture scope 參數可以查看[這篇文章](https://docs.pytest.org/en/6.2.x/fixture.html#fixture-scopes)。
