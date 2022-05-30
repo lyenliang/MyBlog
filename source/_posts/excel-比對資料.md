@@ -26,7 +26,7 @@ Google 試算表是款相當方便的工具，其中有一項的功能就是比�
 
 對著 C2 格子的右下角按按滑鼠左鍵不放，然後往下拖到 C8 位置，這樣就可以讓 C3 ~ C8 都套用 `COUNTIF(A:A,BX)` 函式。
 
-<img src="http://g.recordit.co/zCEt4yPI4I.gif" alt="A and B Columns Drag and Drop" style="width: 390px; " />
+<img src="/images/excel/drag_and_drop.gif" alt="A and B Columns Drag and Drop" style="width: 390px; " />
 
 執行後會發現 B 欄內 `b`、`g`、`f` 三筆資料都回傳 1，其它資料回傳 0，這表示 `b`、`g`、`f` 是 A、B 兩欄交集的資料。
 
