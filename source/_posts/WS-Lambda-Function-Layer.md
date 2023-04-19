@@ -37,7 +37,7 @@ date: 2019-10-01 18:03:00
 
 ![upload successful](/images/pasted-5.png)
 
-由於這些 libraries 跟你寫的 code 在同一個資料夾層級，它們會阻礙你閱讀 code，而且它們超過 3MB，無法在 AWS Lambda 線上編輯器顯示。
+由於這些 libraries 跟你寫的 code 在同一個資料夾層級，它們會阻礙你閱讀 code，而且當它們超過 3MB 時，無法在 AWS Lambda 線上編輯器顯示。
 
 ##### 使用 Layer 後
 
@@ -78,7 +78,7 @@ pip install \
 
 ![upload successful](/images/pasted-13.png)
 
-這時 Layer 只快建立完成，最後只要按下 `Save` 就能儲存 Layer，注意這時 `Layers` 右邊的數字變成 1，表示有一個 Layer。
+這時 Layer 就快建立完成了，最後只要按下 `Save` 就能儲存 Layer，注意這時 `Layers` 右邊的數字變成 1，表示有一個 Layer。
 
 ![upload successful](/images/pasted-14.png)
 
